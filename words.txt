@@ -1,0 +1,4 @@
+猫,cat
+狗,dog
+苹果,apple
+太阳,sun
