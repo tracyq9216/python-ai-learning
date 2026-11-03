@@ -1,0 +1,27 @@
+[
+  {
+    "zh": "太阳",
+    "en": "sun",
+    "sentence": "The sun is bright."
+  },
+  {
+    "zh": "雨",
+    "en": "rain",
+    "sentence": "I see the rain."
+  },
+  {
+    "zh": "云",
+    "en": "cloud",
+    "sentence": "The cloud is white."
+  },
+  {
+    "zh": "风",
+    "en": "wind",
+    "sentence": "The wind is blowing."
+  },
+  {
+    "zh": "雪",
+    "en": "snow",
+    "sentence": "The snow is cold."
+  }
+]
