@@ -1,0 +1,27 @@
+[
+  {
+    "zh": "苹果",
+    "en": "apple",
+    "sentence": "I like apples."
+  },
+  {
+    "zh": "香蕉",
+    "en": "banana",
+    "sentence": "The banana is yellow."
+  },
+  {
+    "zh": "橙子",
+    "en": "orange",
+    "sentence": "I eat an orange."
+  },
+  {
+    "zh": "葡萄",
+    "en": "grapes",
+    "sentence": "The grapes are sweet."
+  },
+  {
+    "zh": "草莓",
+    "en": "strawberry",
+    "sentence": "I like strawberries."
+  }
+]

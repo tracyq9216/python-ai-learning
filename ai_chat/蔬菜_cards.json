@@ -1,0 +1,27 @@
+[
+  {
+    "zh": "胡萝卜",
+    "en": "carrot",
+    "sentence": "I eat a carrot."
+  },
+  {
+    "zh": "西红柿",
+    "en": "tomato",
+    "sentence": "The tomato is red."
+  },
+  {
+    "zh": "黄瓜",
+    "en": "cucumber",
+    "sentence": "I like cucumbers."
+  },
+  {
+    "zh": "土豆",
+    "en": "potato",
+    "sentence": "The potato is big."
+  },
+  {
+    "zh": "玉米",
+    "en": "corn",
+    "sentence": "I eat corn."
+  }
+]
