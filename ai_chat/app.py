@@ -1,12 +1,15 @@
 import streamlit as st
 import json
-from dotenv import load_dotenv
+
 from openai import OpenAI
 
-load_dotenv()
-client=OpenAI()
-
 st.title("双语单词卡")
+
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+password = st.text_input("请输入使用密码", type="password")
+if password != st.secrets["APP_PASSWORD"]:
+    st.info("输入正确的密码后才能使用")
+    st.stop()
 
 rules="""你是幼儿园双语教材编写助手。用户给你一个主题，你给出5个适合5岁孩子的单词。只回复JSON，不要说任何别的话。格式如下：
 [
