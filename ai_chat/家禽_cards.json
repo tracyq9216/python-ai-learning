@@ -1,0 +1,27 @@
+[
+  {
+    "zh": "鸡",
+    "en": "chicken",
+    "sentence": "The chicken is in the yard."
+  },
+  {
+    "zh": "鸭子",
+    "en": "duck",
+    "sentence": "The duck swims in the pond."
+  },
+  {
+    "zh": "鹅",
+    "en": "goose",
+    "sentence": "The goose is white."
+  },
+  {
+    "zh": "火鸡",
+    "en": "turkey",
+    "sentence": "The turkey has a big tail."
+  },
+  {
+    "zh": "公鸡",
+    "en": "rooster",
+    "sentence": "The rooster crows in the morning."
+  }
+]

@@ -3,7 +3,7 @@ import json
 
 from openai import OpenAI
 
-st.title("双语单词卡")
+st.title("双语单词卡 Bilingual Word Cards")
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 password = st.text_input("请输入使用密码", type="password")
@@ -11,12 +11,13 @@ if password != st.secrets["APP_PASSWORD"]:
     st.info("输入正确的密码后才能使用")
     st.stop()
 
-rules="""你是幼儿园双语教材编写助手。用户给你一个主题，你给出5个适合5岁孩子的单词。只回复JSON，不要说任何别的话。格式如下：
-[
-  {"zh":"苹果","en":"apple","sentence":"I like apples."}
-]"""
+rules="""你是幼儿园双语教材编写助手。用户给你一个主题，你给出5个适合5岁孩子的单词。只回复JSON，不要说任何别的话。
+主题是中文时，sentence用英文写。例如：
+[{"zh":"苹果","en":"apple","sentence":"I like apples."}]
+主题是英文时，sentence用中文写。例如：
+[{"zh":"苹果","en":"apple","sentence":"我爱吃苹果。"}]"""
 
-topic=st.text_input("想做什么主题的单词卡？")
+topic=st.text_input("想做什么主题的单词卡？What type of cards do you want?")
 
 if st.button("生成"):
     if topic=="":
