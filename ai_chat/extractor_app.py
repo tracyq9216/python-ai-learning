@@ -24,6 +24,12 @@ def sort_key(record):
 
 st.title("Meeting Notes → To-Do List")
 
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+password = st.text_input("请输入使用密码", type="password")
+if password != st.secrets["APP_PASSWORD"]:
+    st.info("输入正确的密码后才能使用")
+    st.stop()
+
 if "records" not in st.session_state:
     st.session_state["records"]=[]
 
