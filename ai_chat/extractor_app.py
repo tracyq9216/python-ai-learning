@@ -3,8 +3,6 @@ import json
 from openai import OpenAI
 from datetime import date
 
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
-
 rules = """You are an assistant for a teacher. 
 Find every to-do item in school meeting notes or parent messages.
 Only include things someone must do. 
@@ -25,9 +23,9 @@ def sort_key(record):
 st.title("Meeting Notes → To-Do List")
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
-password = st.text_input("请输入使用密码", type="password")
+password = st.text_input("Enter password", type="password")
 if password != st.secrets["APP_PASSWORD"]:
-    st.info("输入正确的密码后才能使用")
+    st.info("Enter the correct password to use this app")
     st.stop()
 
 if "records" not in st.session_state:
